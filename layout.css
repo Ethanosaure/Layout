@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+.background {
+  z-index: 0;
+  background-color: rgb(25, 161, 173);
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  font-family: "Kumbh Sans", sans-serif;
+}
+.background .cercle_top {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgb(255, 255, 255));
+  position: absolute;
+  border-radius: 0 0 40vw 0;
+  height: 80vw;
+  width: 80vw;
+  top: -40vw;
+  left: -35vw;
+  z-index: 1;
+}
+.background .cercle_bot {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgb(255, 255, 255));
+  position: absolute;
+  border-radius: 50vw;
+  height: 80vw;
+  width: 80vw;
+  bottom: -50vw;
+  right: -30vw;
+  z-index: 1;
+}
+.background .container {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 15px;
+  width: 24.3vw;
+  height: 52vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.background .container .block_top {
+  height: 37.3%;
+  border-radius: 15px 15px 0 0;
+  background-color: red;
+  width: 100%;
+}
+.background .container .block_mid {
+  height: 38.6%;
+  width: 100%;
+  padding-top: 20%;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.background .container .block_mid span {
+  display: block;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-align: center;
+}
+.background .container .block_mid .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.background .container .block_mid .info h3 {
+  font-size: 1rem;
+  padding: 0;
+  padding-right: 10px;
+  font-weight: 700;
+}
+.background .container .block_bot {
+  height: 24.1%;
+  border-top: 2px solid lightgray;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.background .container .block_bot span {
+  font-size: 0.5rem;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.background .container .block_bot span h3 {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0 0 5px 0;
+  font-weight: 700;
+}
+.background .container .image {
+  background: url();
+}/*# sourceMappingURL=layout.css.map */

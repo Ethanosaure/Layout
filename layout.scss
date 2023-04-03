@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+.background {
+  z-index: 0;
+  background-color: rgb(25, 161, 173);
+  //   background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgb(25, 161, 173));
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  font-family: "Kumbh Sans", sans-serif;
+  .cercle_top {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgb(255, 255, 255));
+    // background-color: red;
+    position: absolute;
+    border-radius: 0 0 40vw 0;
+    height: 80vw;
+    width: 80vw;
+    top: -40vw;
+    left: -35vw;
+    z-index: 1;
+  }
+  .cercle_bot {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgb(255, 255, 255));
+    // background-color: red;
+    position: absolute;
+    border-radius: 50vw;
+    height: 80vw;
+    width: 80vw;
+    bottom: -50vw;
+    right: -30vw;
+    z-index: 1;
+  }
+  .container {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 15px;
+    width: 24.3vw;
+    height: 52vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+
+    .block_top {
+      height: 37.3%;
+      border-radius: 15px 15px 0 0;
+      background-color: red;
+      width: 100%;
+    }
+    .block_mid {
+      height: 38.6%;
+      width: 100%;
+      padding-top: 20%;
+      align-content: center;
+      margin-left: auto;
+      margin-right: auto;
+
+      span {
+        display: block;
+        letter-spacing: 1px;
+        font-weight: 400;
+        text-align: center;
+      }
+
+      .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        h3 {
+          font-size: 1rem;
+          padding: 0;
+          padding-right: 10px;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .block_bot {
+      height: 24.1%;
+      border-top: 2px solid lightgray;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: nowrap;
+      span {
+        font-size: 0.5rem;
+        text-align: center;
+        letter-spacing: 1px;
+        font-weight: 400;
+        h3 {
+          font-size: 1rem;
+          padding: 0;
+          margin: 0 0 5px 0;
+          font-weight: 700;
+        }
+      }
+    }
+    .image {
+      background: url();
+    }
+  }
+}
