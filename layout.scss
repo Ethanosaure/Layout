@@ -23,29 +23,35 @@
 
     .block_top {
       height: 37.3%;
-      border: 2px solid red;
+      border-radius: 15px 15px 0 0;
       background-color: red;
       width: 100%;
     }
     .block_mid {
       height: 38.6%;
-      border: 2px solid red;
       width: 100%;
       padding-top: 20%;
-      display: block;
+      align-content: center;
+      margin-left: auto;
+      margin-right: auto;
+
       span {
-        display: inline;
-        font-size: 0.5rem;
-        text-align: center;
+        display: block;
         letter-spacing: 1px;
         font-weight: 400;
-        .Info {
-          display: inline;
-        }
+        text-align: center;
+      }
+
+      .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
         h3 {
           font-size: 1rem;
           padding: 0;
-          margin: 0 0 5px 0;
+          padding-right: 20px;
           font-weight: 700;
         }
       }
